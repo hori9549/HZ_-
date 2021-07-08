@@ -1,0 +1,253 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{55F1B2ED-B12E-49AC-82E5-BC9C7D442D78}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>IMECSystem.My.MyApplication</StartupObject>
+    <RootNamespace>IMECSystem</RootNamespace>
+    <AssemblyName>IMECSystem</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>IMECSystem.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>IMECSystem.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Accessibility" />
+    <Reference Include="GrapeCity.ActiveReports.Chart.v12, Version=12.4.18445.1, Culture=neutral, PublicKeyToken=cc4967777c49a3ff" />
+    <Reference Include="GrapeCity.ActiveReports.Diagnostics.v12, Version=12.4.18445.1, Culture=neutral, PublicKeyToken=cc4967777c49a3ff" />
+    <Reference Include="GrapeCity.ActiveReports.Document.v12, Version=12.4.18445.1, Culture=neutral, PublicKeyToken=cc4967777c49a3ff" />
+    <Reference Include="GrapeCity.ActiveReports.Extensibility.v12, Version=12.4.18445.1, Culture=neutral, PublicKeyToken=cc4967777c49a3ff" />
+    <Reference Include="GrapeCity.ActiveReports.v12, Version=12.4.18445.1, Culture=neutral, PublicKeyToken=cc4967777c49a3ff" />
+    <Reference Include="GrapeCity.ActiveReports.Viewer.Win.v12, Version=12.4.18445.1, Culture=neutral, PublicKeyToken=cc4967777c49a3ff, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization.Formatters.Soap" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="clsCSV.vb" />
+    <Compile Include="clsDB.vb" />
+    <Compile Include="clsコンボボックス.vb" />
+    <Compile Include="cls環境設定.vb" />
+    <Compile Include="frmI依頼書登録2.Designer.vb">
+      <DependentUpon>frmI依頼書登録2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmI依頼書登録2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmM区分管理.designer.vb">
+      <DependentUpon>frmM区分管理.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmM区分管理.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmM環境設定.designer.vb">
+      <DependentUpon>frmM環境設定.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmM環境設定.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmM郵便番号取込.designer.vb">
+      <DependentUpon>frmM郵便番号取込.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmM郵便番号取込.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmベース.Designer.vb">
+      <DependentUpon>frmベース.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmベース.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmメニュー.designer.vb">
+      <DependentUpon>frmメニュー.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmメニュー.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmM得意先.Designer.vb">
+      <DependentUpon>FrmM得意先.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmM得意先.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmM社員マスタ.Designer.vb">
+      <DependentUpon>frmM社員マスタ.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmM社員マスタ.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="mdlCommon.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="rpt依頼書.Designer.vb">
+      <DependentUpon>rpt依頼書.vb</DependentUpon>
+    </Compile>
+    <Compile Include="rpt依頼書.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="sfrmベース.designer.vb">
+      <DependentUpon>sfrmベース.vb</DependentUpon>
+    </Compile>
+    <Compile Include="sfrmベース.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="sfrmレポート.designer.vb">
+      <DependentUpon>sfrmレポート.vb</DependentUpon>
+    </Compile>
+    <Compile Include="sfrmレポート.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="sfrm住所検索.designer.vb">
+      <DependentUpon>sfrm住所検索.vb</DependentUpon>
+    </Compile>
+    <Compile Include="sfrm住所検索.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmI依頼書登録.Designer.vb">
+      <DependentUpon>frmI依頼書登録.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmI依頼書登録.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="sfrm日付選択.designer.vb">
+      <DependentUpon>sfrm日付選択.vb</DependentUpon>
+    </Compile>
+    <Compile Include="sfrm日付選択.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="frmI依頼書登録2.resx">
+      <DependentUpon>frmI依頼書登録2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmM区分管理.resx">
+      <DependentUpon>frmM区分管理.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmM環境設定.resx">
+      <DependentUpon>frmM環境設定.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmM郵便番号取込.resx">
+      <DependentUpon>frmM郵便番号取込.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmベース.resx">
+      <DependentUpon>frmベース.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmメニュー.resx">
+      <DependentUpon>frmメニュー.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmM得意先.resx">
+      <DependentUpon>FrmM得意先.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmM社員マスタ.resx">
+      <DependentUpon>frmM社員マスタ.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\licenses.licx" />
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rpt依頼書.resx">
+      <DependentUpon>rpt依頼書.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="sfrmベース.resx">
+      <DependentUpon>sfrmベース.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmI依頼書登録.resx">
+      <DependentUpon>frmI依頼書登録.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="sfrmレポート.resx">
+      <DependentUpon>sfrmレポート.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="sfrm日付選択.resx">
+      <DependentUpon>sfrm日付選択.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+</Project>
