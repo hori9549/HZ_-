@@ -1,7 +1,7 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
 Partial Class frmM社員マスタ
-    Inherits System.Windows.Forms.Form
-    ' Inherits frmベース
+    'Inherits System.Windows.Forms.Form
+    Inherits frmベース
 
     'フォームがコンポーネントの一覧をクリーンアップするために dispose をオーバーライドします。
     <System.Diagnostics.DebuggerNonUserCode()> _
