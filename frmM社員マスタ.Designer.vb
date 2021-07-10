@@ -1,7 +1,7 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
 Partial Class frmM社員マスタ
-    'Inherits System.Windows.Forms.Form
-    Inherits frmベース
+    Inherits System.Windows.Forms.Form
+    ' Inherits frmベース
 
     'フォームがコンポーネントの一覧をクリーンアップするために dispose をオーバーライドします。
     <System.Diagnostics.DebuggerNonUserCode()> _
@@ -90,147 +90,148 @@ Partial Class frmM社員マスタ
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(69, 23)
-        Me.Label2.Margin = New System.Windows.Forms.Padding(6, 0, 6, 0)
+        Me.Label2.Location = New System.Drawing.Point(53, 18)
+        Me.Label2.Margin = New System.Windows.Forms.Padding(5, 0, 5, 0)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(80, 24)
+        Me.Label2.Size = New System.Drawing.Size(64, 19)
         Me.Label2.TabIndex = 0
         Me.Label2.Text = "社員ID"
         '
         'txt社員ID
         '
-        Me.txt社員ID.Location = New System.Drawing.Point(157, 18)
-        Me.txt社員ID.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.txt社員ID.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.txt社員ID.Location = New System.Drawing.Point(121, 14)
+        Me.txt社員ID.Margin = New System.Windows.Forms.Padding(5, 5, 5, 5)
         Me.txt社員ID.Name = "txt社員ID"
         Me.txt社員ID.ReadOnly = True
-        Me.txt社員ID.Size = New System.Drawing.Size(170, 31)
+        Me.txt社員ID.Size = New System.Drawing.Size(132, 26)
         Me.txt社員ID.TabIndex = 1
         '
         'txt氏名
         '
         Me.txt氏名.ImeMode = System.Windows.Forms.ImeMode.[On]
-        Me.txt氏名.Location = New System.Drawing.Point(157, 97)
-        Me.txt氏名.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.txt氏名.Location = New System.Drawing.Point(121, 77)
+        Me.txt氏名.Margin = New System.Windows.Forms.Padding(5, 5, 5, 5)
         Me.txt氏名.Name = "txt氏名"
-        Me.txt氏名.Size = New System.Drawing.Size(205, 31)
+        Me.txt氏名.Size = New System.Drawing.Size(159, 26)
         Me.txt氏名.TabIndex = 8
         '
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(398, 104)
-        Me.Label3.Margin = New System.Windows.Forms.Padding(6, 0, 6, 0)
+        Me.Label3.Location = New System.Drawing.Point(306, 82)
+        Me.Label3.Margin = New System.Windows.Forms.Padding(5, 0, 5, 0)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(0, 24)
+        Me.Label3.Size = New System.Drawing.Size(0, 19)
         Me.Label3.TabIndex = 4
         '
         'Label4
         '
         Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(398, 104)
-        Me.Label4.Margin = New System.Windows.Forms.Padding(6, 0, 6, 0)
+        Me.Label4.Location = New System.Drawing.Point(306, 82)
+        Me.Label4.Margin = New System.Windows.Forms.Padding(5, 0, 5, 0)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(0, 24)
+        Me.Label4.Size = New System.Drawing.Size(0, 19)
         Me.Label4.TabIndex = 6
         '
         'Label5
         '
         Me.Label5.AutoSize = True
-        Me.Label5.Location = New System.Drawing.Point(91, 102)
-        Me.Label5.Margin = New System.Windows.Forms.Padding(6, 0, 6, 0)
+        Me.Label5.Location = New System.Drawing.Point(70, 81)
+        Me.Label5.Margin = New System.Windows.Forms.Padding(5, 0, 5, 0)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(58, 24)
+        Me.Label5.Size = New System.Drawing.Size(47, 19)
         Me.Label5.TabIndex = 7
         Me.Label5.Text = "氏名"
         '
         'Label6
         '
         Me.Label6.AutoSize = True
-        Me.Label6.Location = New System.Drawing.Point(39, 226)
-        Me.Label6.Margin = New System.Windows.Forms.Padding(6, 0, 6, 0)
+        Me.Label6.Location = New System.Drawing.Point(30, 179)
+        Me.Label6.Margin = New System.Windows.Forms.Padding(5, 0, 5, 0)
         Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(110, 24)
+        Me.Label6.Size = New System.Drawing.Size(87, 19)
         Me.Label6.TabIndex = 26
         Me.Label6.Text = "技能ランク"
         '
         'txt技能ランク
         '
-        Me.txt技能ランク.Location = New System.Drawing.Point(157, 221)
-        Me.txt技能ランク.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.txt技能ランク.Location = New System.Drawing.Point(121, 175)
+        Me.txt技能ランク.Margin = New System.Windows.Forms.Padding(5, 5, 5, 5)
         Me.txt技能ランク.Name = "txt技能ランク"
-        Me.txt技能ランク.Size = New System.Drawing.Size(202, 31)
+        Me.txt技能ランク.Size = New System.Drawing.Size(156, 26)
         Me.txt技能ランク.TabIndex = 27
         '
         'Label7
         '
         Me.Label7.AutoSize = True
-        Me.Label7.Location = New System.Drawing.Point(62, 68)
-        Me.Label7.Margin = New System.Windows.Forms.Padding(6, 0, 6, 0)
+        Me.Label7.Location = New System.Drawing.Point(48, 54)
+        Me.Label7.Margin = New System.Windows.Forms.Padding(5, 0, 5, 0)
         Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(86, 24)
+        Me.Label7.Size = New System.Drawing.Size(69, 19)
         Me.Label7.TabIndex = 5
         Me.Label7.Text = "ふりがな"
         '
         'txtふりがな
         '
-        Me.txtふりがな.Location = New System.Drawing.Point(157, 63)
-        Me.txtふりがな.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.txtふりがな.Location = New System.Drawing.Point(121, 50)
+        Me.txtふりがな.Margin = New System.Windows.Forms.Padding(5, 5, 5, 5)
         Me.txtふりがな.Name = "txtふりがな"
-        Me.txtふりがな.Size = New System.Drawing.Size(205, 31)
+        Me.txtふりがな.Size = New System.Drawing.Size(159, 26)
         Me.txtふりがな.TabIndex = 6
         '
         'Label8
         '
         Me.Label8.AutoSize = True
-        Me.Label8.Location = New System.Drawing.Point(398, 227)
-        Me.Label8.Margin = New System.Windows.Forms.Padding(6, 0, 6, 0)
+        Me.Label8.Location = New System.Drawing.Point(306, 180)
+        Me.Label8.Margin = New System.Windows.Forms.Padding(5, 0, 5, 0)
         Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(112, 24)
+        Me.Label8.Size = New System.Drawing.Size(90, 19)
         Me.Label8.TabIndex = 28
         Me.Label8.Text = "職種コード"
         '
         'txt職種コード
         '
-        Me.txt職種コード.Location = New System.Drawing.Point(519, 222)
-        Me.txt職種コード.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.txt職種コード.Location = New System.Drawing.Point(399, 176)
+        Me.txt職種コード.Margin = New System.Windows.Forms.Padding(5, 5, 5, 5)
         Me.txt職種コード.Name = "txt職種コード"
-        Me.txt職種コード.Size = New System.Drawing.Size(202, 31)
+        Me.txt職種コード.Size = New System.Drawing.Size(156, 26)
         Me.txt職種コード.TabIndex = 29
         '
         'Label9
         '
         Me.Label9.AutoSize = True
-        Me.Label9.Location = New System.Drawing.Point(398, 24)
-        Me.Label9.Margin = New System.Windows.Forms.Padding(6, 0, 6, 0)
+        Me.Label9.Location = New System.Drawing.Point(306, 19)
+        Me.Label9.Margin = New System.Windows.Forms.Padding(5, 0, 5, 0)
         Me.Label9.Name = "Label9"
-        Me.Label9.Size = New System.Drawing.Size(112, 24)
+        Me.Label9.Size = New System.Drawing.Size(90, 19)
         Me.Label9.TabIndex = 3
         Me.Label9.Text = "権限コード"
         '
         'txt権限コード
         '
-        Me.txt権限コード.Location = New System.Drawing.Point(519, 19)
-        Me.txt権限コード.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.txt権限コード.Location = New System.Drawing.Point(399, 15)
+        Me.txt権限コード.Margin = New System.Windows.Forms.Padding(5, 5, 5, 5)
         Me.txt権限コード.Name = "txt権限コード"
-        Me.txt権限コード.Size = New System.Drawing.Size(127, 31)
+        Me.txt権限コード.Size = New System.Drawing.Size(99, 26)
         Me.txt権限コード.TabIndex = 4
         '
         'Label10
         '
         Me.Label10.AutoSize = True
-        Me.Label10.Location = New System.Drawing.Point(42, 148)
-        Me.Label10.Margin = New System.Windows.Forms.Padding(6, 0, 6, 0)
+        Me.Label10.Location = New System.Drawing.Point(32, 117)
+        Me.Label10.Margin = New System.Windows.Forms.Padding(5, 0, 5, 0)
         Me.Label10.Name = "Label10"
-        Me.Label10.Size = New System.Drawing.Size(106, 24)
+        Me.Label10.Size = New System.Drawing.Size(85, 19)
         Me.Label10.TabIndex = 16
         Me.Label10.Text = "入社月日"
         '
         'txt入社月日
         '
-        Me.txt入社月日.Location = New System.Drawing.Point(157, 143)
-        Me.txt入社月日.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.txt入社月日.Location = New System.Drawing.Point(121, 113)
+        Me.txt入社月日.Margin = New System.Windows.Forms.Padding(5, 5, 5, 5)
         Me.txt入社月日.Name = "txt入社月日"
-        Me.txt入社月日.Size = New System.Drawing.Size(170, 31)
+        Me.txt入社月日.Size = New System.Drawing.Size(132, 26)
         Me.txt入社月日.TabIndex = 17
         Me.txt入社月日.Text = "yyyy/MM/dd"
         Me.txt入社月日.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
@@ -238,75 +239,75 @@ Partial Class frmM社員マスタ
         'Label11
         '
         Me.Label11.AutoSize = True
-        Me.Label11.Location = New System.Drawing.Point(66, 191)
-        Me.Label11.Margin = New System.Windows.Forms.Padding(6, 0, 6, 0)
+        Me.Label11.Location = New System.Drawing.Point(51, 151)
+        Me.Label11.Margin = New System.Windows.Forms.Padding(5, 0, 5, 0)
         Me.Label11.Name = "Label11"
-        Me.Label11.Size = New System.Drawing.Size(82, 24)
+        Me.Label11.Size = New System.Drawing.Size(66, 19)
         Me.Label11.TabIndex = 22
         Me.Label11.Text = "所属部"
         '
         'txt所属部
         '
-        Me.txt所属部.Location = New System.Drawing.Point(157, 187)
-        Me.txt所属部.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.txt所属部.Location = New System.Drawing.Point(121, 148)
+        Me.txt所属部.Margin = New System.Windows.Forms.Padding(5, 5, 5, 5)
         Me.txt所属部.Name = "txt所属部"
-        Me.txt所属部.Size = New System.Drawing.Size(202, 31)
+        Me.txt所属部.Size = New System.Drawing.Size(156, 26)
         Me.txt所属部.TabIndex = 23
         '
         'Label12
         '
         Me.Label12.AutoSize = True
-        Me.Label12.Location = New System.Drawing.Point(429, 196)
-        Me.Label12.Margin = New System.Windows.Forms.Padding(6, 0, 6, 0)
+        Me.Label12.Location = New System.Drawing.Point(330, 155)
+        Me.Label12.Margin = New System.Windows.Forms.Padding(5, 0, 5, 0)
         Me.Label12.Name = "Label12"
-        Me.Label12.Size = New System.Drawing.Size(82, 24)
+        Me.Label12.Size = New System.Drawing.Size(66, 19)
         Me.Label12.TabIndex = 24
         Me.Label12.Text = "所属課"
         Me.Label12.TextAlign = System.Drawing.ContentAlignment.TopRight
         '
         'txt所属課
         '
-        Me.txt所属課.Location = New System.Drawing.Point(519, 188)
-        Me.txt所属課.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.txt所属課.Location = New System.Drawing.Point(399, 149)
+        Me.txt所属課.Margin = New System.Windows.Forms.Padding(5, 5, 5, 5)
         Me.txt所属課.Name = "txt所属課"
-        Me.txt所属課.Size = New System.Drawing.Size(202, 31)
+        Me.txt所属課.Size = New System.Drawing.Size(156, 26)
         Me.txt所属課.TabIndex = 25
         '
         'Label13
         '
         Me.Label13.AutoSize = True
-        Me.Label13.Location = New System.Drawing.Point(771, 227)
-        Me.Label13.Margin = New System.Windows.Forms.Padding(6, 0, 6, 0)
+        Me.Label13.Location = New System.Drawing.Point(593, 180)
+        Me.Label13.Margin = New System.Windows.Forms.Padding(5, 0, 5, 0)
         Me.Label13.Name = "Label13"
-        Me.Label13.Size = New System.Drawing.Size(58, 24)
+        Me.Label13.Size = New System.Drawing.Size(47, 19)
         Me.Label13.TabIndex = 30
         Me.Label13.Text = "役職"
         Me.Label13.TextAlign = System.Drawing.ContentAlignment.TopRight
         '
         'txt役職
         '
-        Me.txt役職.Location = New System.Drawing.Point(846, 222)
-        Me.txt役職.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.txt役職.Location = New System.Drawing.Point(651, 176)
+        Me.txt役職.Margin = New System.Windows.Forms.Padding(5, 5, 5, 5)
         Me.txt役職.Name = "txt役職"
-        Me.txt役職.Size = New System.Drawing.Size(202, 31)
+        Me.txt役職.Size = New System.Drawing.Size(156, 26)
         Me.txt役職.TabIndex = 31
         '
         'Label14
         '
         Me.Label14.AutoSize = True
-        Me.Label14.Location = New System.Drawing.Point(404, 149)
-        Me.Label14.Margin = New System.Windows.Forms.Padding(6, 0, 6, 0)
+        Me.Label14.Location = New System.Drawing.Point(311, 118)
+        Me.Label14.Margin = New System.Windows.Forms.Padding(5, 0, 5, 0)
         Me.Label14.Name = "Label14"
-        Me.Label14.Size = New System.Drawing.Size(106, 24)
+        Me.Label14.Size = New System.Drawing.Size(85, 19)
         Me.Label14.TabIndex = 19
         Me.Label14.Text = "退社月日"
         '
         'txt退社月日
         '
-        Me.txt退社月日.Location = New System.Drawing.Point(519, 144)
-        Me.txt退社月日.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.txt退社月日.Location = New System.Drawing.Point(399, 114)
+        Me.txt退社月日.Margin = New System.Windows.Forms.Padding(5, 5, 5, 5)
         Me.txt退社月日.Name = "txt退社月日"
-        Me.txt退社月日.Size = New System.Drawing.Size(170, 31)
+        Me.txt退社月日.Size = New System.Drawing.Size(132, 26)
         Me.txt退社月日.TabIndex = 20
         Me.txt退社月日.Text = "yyyy/MM/dd"
         Me.txt退社月日.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
@@ -314,87 +315,86 @@ Partial Class frmM社員マスタ
         'Label15
         '
         Me.Label15.AutoSize = True
-        Me.Label15.Location = New System.Drawing.Point(404, 69)
-        Me.Label15.Margin = New System.Windows.Forms.Padding(6, 0, 6, 0)
+        Me.Label15.Location = New System.Drawing.Point(311, 55)
+        Me.Label15.Margin = New System.Windows.Forms.Padding(5, 0, 5, 0)
         Me.Label15.Name = "Label15"
-        Me.Label15.Size = New System.Drawing.Size(106, 24)
+        Me.Label15.Size = New System.Drawing.Size(85, 19)
         Me.Label15.TabIndex = 9
         Me.Label15.Text = "郵便番号"
         '
         'txt郵便番号
         '
         Me.txt郵便番号.ImeMode = System.Windows.Forms.ImeMode.Disable
-        Me.txt郵便番号.Location = New System.Drawing.Point(519, 64)
-        Me.txt郵便番号.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.txt郵便番号.Location = New System.Drawing.Point(399, 51)
+        Me.txt郵便番号.Margin = New System.Windows.Forms.Padding(5, 5, 5, 5)
         Me.txt郵便番号.Name = "txt郵便番号"
-        Me.txt郵便番号.Size = New System.Drawing.Size(127, 31)
+        Me.txt郵便番号.Size = New System.Drawing.Size(99, 26)
         Me.txt郵便番号.TabIndex = 10
         Me.txt郵便番号.Text = "4050075"
         '
         'Label16
         '
         Me.Label16.AutoSize = True
-        Me.Label16.Location = New System.Drawing.Point(404, 104)
-        Me.Label16.Margin = New System.Windows.Forms.Padding(6, 0, 6, 0)
+        Me.Label16.Location = New System.Drawing.Point(311, 82)
+        Me.Label16.Margin = New System.Windows.Forms.Padding(5, 0, 5, 0)
         Me.Label16.Name = "Label16"
-        Me.Label16.Size = New System.Drawing.Size(106, 24)
+        Me.Label16.Size = New System.Drawing.Size(85, 19)
         Me.Label16.TabIndex = 14
         Me.Label16.Text = "電話番号"
         '
         'txt電話番号
         '
         Me.txt電話番号.ImeMode = System.Windows.Forms.ImeMode.Off
-        Me.txt電話番号.Location = New System.Drawing.Point(519, 99)
-        Me.txt電話番号.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.txt電話番号.Location = New System.Drawing.Point(399, 78)
+        Me.txt電話番号.Margin = New System.Windows.Forms.Padding(5, 5, 5, 5)
         Me.txt電話番号.Name = "txt電話番号"
-        Me.txt電話番号.Size = New System.Drawing.Size(202, 31)
+        Me.txt電話番号.Size = New System.Drawing.Size(156, 26)
         Me.txt電話番号.TabIndex = 15
         Me.txt電話番号.Text = "090-0000-0000"
         '
         'Label17
         '
         Me.Label17.AutoSize = True
-        Me.Label17.Location = New System.Drawing.Point(772, 68)
-        Me.Label17.Margin = New System.Windows.Forms.Padding(6, 0, 6, 0)
+        Me.Label17.Location = New System.Drawing.Point(594, 54)
+        Me.Label17.Margin = New System.Windows.Forms.Padding(5, 0, 5, 0)
         Me.Label17.Name = "Label17"
-        Me.Label17.Size = New System.Drawing.Size(58, 24)
+        Me.Label17.Size = New System.Drawing.Size(47, 19)
         Me.Label17.TabIndex = 12
         Me.Label17.Text = "住所"
         '
         'txt住所
         '
-        Me.txt住所.Location = New System.Drawing.Point(846, 63)
-        Me.txt住所.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.txt住所.Location = New System.Drawing.Point(651, 50)
+        Me.txt住所.Margin = New System.Windows.Forms.Padding(5, 5, 5, 5)
         Me.txt住所.Name = "txt住所"
-        Me.txt住所.Size = New System.Drawing.Size(673, 31)
+        Me.txt住所.Size = New System.Drawing.Size(519, 26)
         Me.txt住所.TabIndex = 13
         '
         'Label18
         '
         Me.Label18.AutoSize = True
-        Me.Label18.Location = New System.Drawing.Point(91, 270)
-        Me.Label18.Margin = New System.Windows.Forms.Padding(6, 0, 6, 0)
+        Me.Label18.Location = New System.Drawing.Point(70, 214)
+        Me.Label18.Margin = New System.Windows.Forms.Padding(5, 0, 5, 0)
         Me.Label18.Name = "Label18"
-        Me.Label18.Size = New System.Drawing.Size(58, 24)
+        Me.Label18.Size = New System.Drawing.Size(47, 19)
         Me.Label18.TabIndex = 32
         Me.Label18.Text = "略歴"
         '
         'txt略歴
         '
         Me.txt略歴.ImeMode = System.Windows.Forms.ImeMode.[On]
-        Me.txt略歴.Location = New System.Drawing.Point(157, 267)
-        Me.txt略歴.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.txt略歴.Location = New System.Drawing.Point(121, 211)
+        Me.txt略歴.Margin = New System.Windows.Forms.Padding(5, 5, 5, 5)
         Me.txt略歴.Multiline = True
         Me.txt略歴.Name = "txt略歴"
-        Me.txt略歴.Size = New System.Drawing.Size(1115, 62)
+        Me.txt略歴.Size = New System.Drawing.Size(859, 50)
         Me.txt略歴.TabIndex = 33
         '
         'btn登録
         '
-        Me.btn登録.Location = New System.Drawing.Point(1326, 267)
-        Me.btn登録.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.btn登録.Location = New System.Drawing.Point(1020, 211)
         Me.btn登録.Name = "btn登録"
-        Me.btn登録.Size = New System.Drawing.Size(195, 63)
+        Me.btn登録.Size = New System.Drawing.Size(150, 50)
         Me.btn登録.TabIndex = 34
         Me.btn登録.Text = "登録"
         Me.btn登録.UseVisualStyleBackColor = True
@@ -408,15 +408,14 @@ Partial Class frmM社員マスタ
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.dgv一覧.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.dgv一覧.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.colID, Me.col社員ID, Me.col氏名, Me.colふりがな, Me.col技能ランク, Me.col入社月日, Me.col職種コード, Me.col権限コード, Me.col所属部, Me.col所属課, Me.col役職, Me.col退社, Me.col退社月日, Me.col電話番号, Me.col郵便番号, Me.col住所, Me.col都道府県, Me.col市区郡, Me.col町村域, Me.col建物, Me.col略歴})
-        Me.dgv一覧.Location = New System.Drawing.Point(14, 337)
-        Me.dgv一覧.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.dgv一覧.Location = New System.Drawing.Point(11, 267)
         Me.dgv一覧.Name = "dgv一覧"
         Me.dgv一覧.ReadOnly = True
         Me.dgv一覧.RowHeadersVisible = False
         Me.dgv一覧.RowHeadersWidth = 51
         Me.dgv一覧.RowTemplate.Height = 30
         Me.dgv一覧.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
-        Me.dgv一覧.Size = New System.Drawing.Size(1505, 507)
+        Me.dgv一覧.Size = New System.Drawing.Size(1158, 401)
         Me.dgv一覧.TabIndex = 35
         Me.dgv一覧.TabStop = False
         '
@@ -624,30 +623,27 @@ Partial Class frmM社員マスタ
         '
         'btn入社月日
         '
-        Me.btn入社月日.Location = New System.Drawing.Point(330, 143)
-        Me.btn入社月日.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.btn入社月日.Location = New System.Drawing.Point(254, 113)
         Me.btn入社月日.Name = "btn入社月日"
-        Me.btn入社月日.Size = New System.Drawing.Size(34, 34)
+        Me.btn入社月日.Size = New System.Drawing.Size(26, 27)
         Me.btn入社月日.TabIndex = 18
         Me.btn入社月日.TabStop = False
         Me.btn入社月日.UseVisualStyleBackColor = True
         '
         'btn退社月日
         '
-        Me.btn退社月日.Location = New System.Drawing.Point(692, 144)
-        Me.btn退社月日.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.btn退社月日.Location = New System.Drawing.Point(532, 114)
         Me.btn退社月日.Name = "btn退社月日"
-        Me.btn退社月日.Size = New System.Drawing.Size(34, 34)
+        Me.btn退社月日.Size = New System.Drawing.Size(26, 27)
         Me.btn退社月日.TabIndex = 21
         Me.btn退社月日.TabStop = False
         Me.btn退社月日.UseVisualStyleBackColor = True
         '
         'btnクリア
         '
-        Me.btnクリア.Location = New System.Drawing.Point(330, 18)
-        Me.btnクリア.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.btnクリア.Location = New System.Drawing.Point(254, 14)
         Me.btnクリア.Name = "btnクリア"
-        Me.btnクリア.Size = New System.Drawing.Size(34, 34)
+        Me.btnクリア.Size = New System.Drawing.Size(26, 27)
         Me.btnクリア.TabIndex = 2
         Me.btnクリア.TabStop = False
         Me.btnクリア.Text = "+"
@@ -655,19 +651,18 @@ Partial Class frmM社員マスタ
         '
         'btn取得
         '
-        Me.btn取得.Location = New System.Drawing.Point(655, 62)
-        Me.btn取得.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.btn取得.Location = New System.Drawing.Point(504, 49)
         Me.btn取得.Name = "btn取得"
-        Me.btn取得.Size = New System.Drawing.Size(34, 34)
+        Me.btn取得.Size = New System.Drawing.Size(26, 27)
         Me.btn取得.TabIndex = 11
         Me.btn取得.Text = "+"
         Me.btn取得.UseVisualStyleBackColor = True
         '
         'frmM社員マスタ
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(13.0!, 24.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(10.0!, 19.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1539, 961)
+        Me.ClientSize = New System.Drawing.Size(1184, 761)
         Me.Controls.Add(Me.btn取得)
         Me.Controls.Add(Me.btnクリア)
         Me.Controls.Add(Me.btn退社月日)
@@ -706,7 +701,7 @@ Partial Class frmM社員マスタ
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.txt社員ID)
         Me.Controls.Add(Me.Label2)
-        Me.Margin = New System.Windows.Forms.Padding(10, 10, 10, 10)
+        Me.Margin = New System.Windows.Forms.Padding(8, 8, 8, 8)
         Me.Name = "frmM社員マスタ"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent
         Me.Text = "社員マスタ"
