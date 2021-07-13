@@ -99,9 +99,9 @@ Partial Class frmM社員マスタ
         '
         'txt社員ID
         '
-        Me.txt社員ID.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.txt社員ID.BackColor = System.Drawing.SystemColors.Window
         Me.txt社員ID.Location = New System.Drawing.Point(121, 14)
-        Me.txt社員ID.Margin = New System.Windows.Forms.Padding(5, 5, 5, 5)
+        Me.txt社員ID.Margin = New System.Windows.Forms.Padding(5)
         Me.txt社員ID.Name = "txt社員ID"
         Me.txt社員ID.ReadOnly = True
         Me.txt社員ID.Size = New System.Drawing.Size(132, 26)
@@ -111,7 +111,7 @@ Partial Class frmM社員マスタ
         '
         Me.txt氏名.ImeMode = System.Windows.Forms.ImeMode.[On]
         Me.txt氏名.Location = New System.Drawing.Point(121, 77)
-        Me.txt氏名.Margin = New System.Windows.Forms.Padding(5, 5, 5, 5)
+        Me.txt氏名.Margin = New System.Windows.Forms.Padding(5)
         Me.txt氏名.Name = "txt氏名"
         Me.txt氏名.Size = New System.Drawing.Size(159, 26)
         Me.txt氏名.TabIndex = 8
@@ -157,7 +157,7 @@ Partial Class frmM社員マスタ
         'txt技能ランク
         '
         Me.txt技能ランク.Location = New System.Drawing.Point(121, 175)
-        Me.txt技能ランク.Margin = New System.Windows.Forms.Padding(5, 5, 5, 5)
+        Me.txt技能ランク.Margin = New System.Windows.Forms.Padding(5)
         Me.txt技能ランク.Name = "txt技能ランク"
         Me.txt技能ランク.Size = New System.Drawing.Size(156, 26)
         Me.txt技能ランク.TabIndex = 27
@@ -175,7 +175,7 @@ Partial Class frmM社員マスタ
         'txtふりがな
         '
         Me.txtふりがな.Location = New System.Drawing.Point(121, 50)
-        Me.txtふりがな.Margin = New System.Windows.Forms.Padding(5, 5, 5, 5)
+        Me.txtふりがな.Margin = New System.Windows.Forms.Padding(5)
         Me.txtふりがな.Name = "txtふりがな"
         Me.txtふりがな.Size = New System.Drawing.Size(159, 26)
         Me.txtふりがな.TabIndex = 6
@@ -193,7 +193,7 @@ Partial Class frmM社員マスタ
         'txt職種コード
         '
         Me.txt職種コード.Location = New System.Drawing.Point(399, 176)
-        Me.txt職種コード.Margin = New System.Windows.Forms.Padding(5, 5, 5, 5)
+        Me.txt職種コード.Margin = New System.Windows.Forms.Padding(5)
         Me.txt職種コード.Name = "txt職種コード"
         Me.txt職種コード.Size = New System.Drawing.Size(156, 26)
         Me.txt職種コード.TabIndex = 29
@@ -211,7 +211,7 @@ Partial Class frmM社員マスタ
         'txt権限コード
         '
         Me.txt権限コード.Location = New System.Drawing.Point(399, 15)
-        Me.txt権限コード.Margin = New System.Windows.Forms.Padding(5, 5, 5, 5)
+        Me.txt権限コード.Margin = New System.Windows.Forms.Padding(5)
         Me.txt権限コード.Name = "txt権限コード"
         Me.txt権限コード.Size = New System.Drawing.Size(99, 26)
         Me.txt権限コード.TabIndex = 4
@@ -229,7 +229,7 @@ Partial Class frmM社員マスタ
         'txt入社月日
         '
         Me.txt入社月日.Location = New System.Drawing.Point(121, 113)
-        Me.txt入社月日.Margin = New System.Windows.Forms.Padding(5, 5, 5, 5)
+        Me.txt入社月日.Margin = New System.Windows.Forms.Padding(5)
         Me.txt入社月日.Name = "txt入社月日"
         Me.txt入社月日.Size = New System.Drawing.Size(132, 26)
         Me.txt入社月日.TabIndex = 17
@@ -249,7 +249,7 @@ Partial Class frmM社員マスタ
         'txt所属部
         '
         Me.txt所属部.Location = New System.Drawing.Point(121, 148)
-        Me.txt所属部.Margin = New System.Windows.Forms.Padding(5, 5, 5, 5)
+        Me.txt所属部.Margin = New System.Windows.Forms.Padding(5)
         Me.txt所属部.Name = "txt所属部"
         Me.txt所属部.Size = New System.Drawing.Size(156, 26)
         Me.txt所属部.TabIndex = 23
@@ -268,7 +268,7 @@ Partial Class frmM社員マスタ
         'txt所属課
         '
         Me.txt所属課.Location = New System.Drawing.Point(399, 149)
-        Me.txt所属課.Margin = New System.Windows.Forms.Padding(5, 5, 5, 5)
+        Me.txt所属課.Margin = New System.Windows.Forms.Padding(5)
         Me.txt所属課.Name = "txt所属課"
         Me.txt所属課.Size = New System.Drawing.Size(156, 26)
         Me.txt所属課.TabIndex = 25
@@ -287,7 +287,7 @@ Partial Class frmM社員マスタ
         'txt役職
         '
         Me.txt役職.Location = New System.Drawing.Point(651, 176)
-        Me.txt役職.Margin = New System.Windows.Forms.Padding(5, 5, 5, 5)
+        Me.txt役職.Margin = New System.Windows.Forms.Padding(5)
         Me.txt役職.Name = "txt役職"
         Me.txt役職.Size = New System.Drawing.Size(156, 26)
         Me.txt役職.TabIndex = 31
@@ -305,7 +305,7 @@ Partial Class frmM社員マスタ
         'txt退社月日
         '
         Me.txt退社月日.Location = New System.Drawing.Point(399, 114)
-        Me.txt退社月日.Margin = New System.Windows.Forms.Padding(5, 5, 5, 5)
+        Me.txt退社月日.Margin = New System.Windows.Forms.Padding(5)
         Me.txt退社月日.Name = "txt退社月日"
         Me.txt退社月日.Size = New System.Drawing.Size(132, 26)
         Me.txt退社月日.TabIndex = 20
@@ -326,7 +326,7 @@ Partial Class frmM社員マスタ
         '
         Me.txt郵便番号.ImeMode = System.Windows.Forms.ImeMode.Disable
         Me.txt郵便番号.Location = New System.Drawing.Point(399, 51)
-        Me.txt郵便番号.Margin = New System.Windows.Forms.Padding(5, 5, 5, 5)
+        Me.txt郵便番号.Margin = New System.Windows.Forms.Padding(5)
         Me.txt郵便番号.Name = "txt郵便番号"
         Me.txt郵便番号.Size = New System.Drawing.Size(99, 26)
         Me.txt郵便番号.TabIndex = 10
@@ -346,7 +346,7 @@ Partial Class frmM社員マスタ
         '
         Me.txt電話番号.ImeMode = System.Windows.Forms.ImeMode.Off
         Me.txt電話番号.Location = New System.Drawing.Point(399, 78)
-        Me.txt電話番号.Margin = New System.Windows.Forms.Padding(5, 5, 5, 5)
+        Me.txt電話番号.Margin = New System.Windows.Forms.Padding(5)
         Me.txt電話番号.Name = "txt電話番号"
         Me.txt電話番号.Size = New System.Drawing.Size(156, 26)
         Me.txt電話番号.TabIndex = 15
@@ -365,7 +365,7 @@ Partial Class frmM社員マスタ
         'txt住所
         '
         Me.txt住所.Location = New System.Drawing.Point(651, 50)
-        Me.txt住所.Margin = New System.Windows.Forms.Padding(5, 5, 5, 5)
+        Me.txt住所.Margin = New System.Windows.Forms.Padding(5)
         Me.txt住所.Name = "txt住所"
         Me.txt住所.Size = New System.Drawing.Size(519, 26)
         Me.txt住所.TabIndex = 13
@@ -384,7 +384,7 @@ Partial Class frmM社員マスタ
         '
         Me.txt略歴.ImeMode = System.Windows.Forms.ImeMode.[On]
         Me.txt略歴.Location = New System.Drawing.Point(121, 211)
-        Me.txt略歴.Margin = New System.Windows.Forms.Padding(5, 5, 5, 5)
+        Me.txt略歴.Margin = New System.Windows.Forms.Padding(5)
         Me.txt略歴.Multiline = True
         Me.txt略歴.Name = "txt略歴"
         Me.txt略歴.Size = New System.Drawing.Size(859, 50)
@@ -701,7 +701,7 @@ Partial Class frmM社員マスタ
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.txt社員ID)
         Me.Controls.Add(Me.Label2)
-        Me.Margin = New System.Windows.Forms.Padding(8, 8, 8, 8)
+        Me.Margin = New System.Windows.Forms.Padding(8)
         Me.Name = "frmM社員マスタ"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent
         Me.Text = "社員マスタ"

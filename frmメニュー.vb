@@ -56,7 +56,4 @@
         Call sfrm.ShowDialog()
     End Sub
 
-    Private Sub TabControl1_SelectedIndexChanged(sender As Object, e As EventArgs) Handles TabControl1.SelectedIndexChanged
-
-    End Sub
 End Class
