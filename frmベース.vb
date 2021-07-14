@@ -42,10 +42,10 @@
         Return MyBase.ProcessDialogKey(keyData)
     End Function
 
-    Protected Overrides Sub OnEnter(e As EventArgs)
-        Dim getControl As Control = Me.ActiveControl
+    'Protected Overrides Sub OnEnter(e As EventArgs)
+    '    Dim getControl As Control = Me.ActiveControl
 
-    End Sub
+    'End Sub
 
     Private Sub Template_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         BackColorChg(sender)

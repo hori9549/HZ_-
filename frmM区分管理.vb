@@ -3,6 +3,9 @@
 '
 Imports System.Data
 Imports System.Data.SqlClient
+'''<summary>
+'''エンタータブ処理
+'''</summary>
 
 Public Class frmM区分管理
     Private msSQL As String
@@ -10,37 +13,36 @@ Public Class frmM区分管理
     Private mSDA As New SqlDataAdapter
     Private myコンボ As New clsコンボボックス
 
-    'エンタータブ処理
-    Protected Overrides Function ProcessDialogKey(ByVal keyData As Keys) As Boolean
-        Dim getControl As Control = Me.ActiveControl
-        ' 取得できた場合のみ、そのコントロールの名前を表示する
-        ' If Not getControl Is Nothing Then
-        '    MessageBox.Show(getControl.GetType.Name)
-        '    MessageBox.Show(getControl.Name)
-        'End If
+    'Protected Overrides Function ProcessDialogKey(ByVal keyData As Keys) As Boolean
+    '    Dim getControl As Control = Me.ActiveControl
+    '    ' 取得できた場合のみ、そのコントロールの名前を表示する
+    '    ' If Not getControl Is Nothing Then
+    '    '    MessageBox.Show(getControl.GetType.Name)
+    '    '    MessageBox.Show(getControl.Name)
+    '    'End If
 
-        ''ボタンだったらタブにしない
-        Select Case getControl.GetType.Name
-            Case "TextBox", "ComboBox"
-                'Returnキーが押されているか調べる
-                'AltかCtrlキーが押されている時は、本来の動作をさせる
-                If ((keyData And Keys.KeyCode) = Keys.Return) AndAlso
-                    ((keyData And (Keys.Alt Or Keys.Control)) = Keys.None) Then
-                    'Tabキーを押した時と同じ動作をさせる
-                    'Shiftキーが押されている時は、逆順にする
-                    Me.ProcessTabKey((keyData And Keys.Shift) <> Keys.Shift)
-                    '本来の処理はさせない
-                    Return True
-                End If
-                Return MyBase.ProcessDialogKey(keyData)
+    '    ''ボタンだったらタブにしない
+    '    Select Case getControl.GetType.Name
+    '        Case "TextBox", "ComboBox"
+    '            'Returnキーが押されているか調べる
+    '            'AltかCtrlキーが押されている時は、本来の動作をさせる
+    '            If ((keyData And Keys.KeyCode) = Keys.Return) AndAlso
+    '                ((keyData And (Keys.Alt Or Keys.Control)) = Keys.None) Then
+    '                'Tabキーを押した時と同じ動作をさせる
+    '                'Shiftキーが押されている時は、逆順にする
+    '                Me.ProcessTabKey((keyData And Keys.Shift) <> Keys.Shift)
+    '                '本来の処理はさせない
+    '                Return True
+    '            End If
+    '            Return MyBase.ProcessDialogKey(keyData)
 
-            Case Else
+    '        Case Else
 
-        End Select
-        ' End if 
-        Return MyBase.ProcessDialogKey(keyData)
+    '    End Select
+    '    ' End if 
+    '    Return MyBase.ProcessDialogKey(keyData)
 
-    End Function
+    'End Function
 
     Private Sub frm区分管理_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         ''コンボボックスセット
