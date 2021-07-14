@@ -32,7 +32,7 @@ Namespace My
         
         <Global.System.Diagnostics.DebuggerStepThroughAttribute()>  _
         Protected Overrides Sub OnCreateMainForm()
-            Me.MainForm = Global.IMECSystem.Form1
+            Me.MainForm = Global.IMECSystem.frmメニュー
         End Sub
     End Class
 End Namespace
