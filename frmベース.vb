@@ -4,6 +4,7 @@
 
 
     ''エンタータブ処理
+
     Protected Overrides Function ProcessDialogKey(ByVal keyData As Keys) As Boolean
         Dim getControl As Control = Me.ActiveControl
 
