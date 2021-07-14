@@ -81,12 +81,6 @@
     <Compile Include="clsDB.vb" />
     <Compile Include="clsコンボボックス.vb" />
     <Compile Include="cls環境設定.vb" />
-    <Compile Include="Form1.Designer.vb">
-      <DependentUpon>Form1.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Form1.vb">
-      <SubType>Component</SubType>
-    </Compile>
     <Compile Include="frmI依頼書登録2.Designer.vb">
       <DependentUpon>frmI依頼書登録2.vb</DependentUpon>
     </Compile>
@@ -152,9 +146,6 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <Compile Include="NewTextBox.vb">
-      <SubType>Component</SubType>
-    </Compile>
     <Compile Include="sfrmベース.designer.vb">
       <DependentUpon>sfrmベース.vb</DependentUpon>
     </Compile>
@@ -181,9 +172,6 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.vb</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="frmI依頼書登録2.resx">
       <DependentUpon>frmI依頼書登録2.vb</DependentUpon>
     </EmbeddedResource>
