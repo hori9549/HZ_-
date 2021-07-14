@@ -1,4 +1,7 @@
-﻿Public Class frmベース
+﻿''' <summary>
+''' inherits理解のための演習用　2107～
+''' </summary>
+Public Class frmベース
     ''元のカラーを保存しておく変数
     Private Shared BeforeBackColor As Color '元のカラー
 
@@ -44,6 +47,7 @@
 
     'Protected Overrides Sub OnEnter(e As EventArgs)
     '    Dim getControl As Control = Me.ActiveControl
+
 
     'End Sub
 
