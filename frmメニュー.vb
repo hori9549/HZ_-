@@ -1,4 +1,7 @@
-﻿Public Class frmメニュー
+﻿''' <summary>frmベース　[Enter]キーで次の TabIndex があるコントロールへフォーカスを移す
+''' フォームKeyDownイベントで実験
+''' </summary>
+Public Class frmメニュー
     Private Shared _mutex As System.Threading.Mutex
     Private OpenForm As Form
 

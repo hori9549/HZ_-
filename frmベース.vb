@@ -5,45 +5,71 @@ Public Class frmベース
     ''元のカラーを保存しておく変数
     Private Shared BeforeBackColor As Color '元のカラー
 
+    ''' <summary>
+    ''' フォームKeyDownイベント
+    ''' </summary>
+    Private Sub frmEnterNext_KeyDown(ByVal sender As Object,
+                                     ByVal e As System.Windows.Forms.KeyEventArgs) Handles MyBase.KeyDown
+        If e.KeyCode = Keys.Enter Then
+            If e.Control = False Then
+                '[Enter]キーで次の TabIndex があるコントロールへフォーカスを移す
+                Me.SelectNextControl(Me.ActiveControl, Not e.Shift, True, True, True)
+            End If
+        End If
+    End Sub
 
-    ''エンタータブ処理
+    ''' <summary>
+    ''' フォームKeyPressイベント
+    ''' </summary>
+    Private Sub frmEnterNext_KeyPress(ByVal sender As Object,
+                                      ByVal e As System.Windows.Forms.KeyPressEventArgs) Handles MyBase.KeyPress
+        If e.KeyChar = ControlChars.Cr Then
+            '[Enter]キーで音が出るので、キーイベントが処理されたことにして音を消す
+            e.Handled = True
+        End If
+    End Sub
 
-    Protected Overrides Function ProcessDialogKey(ByVal keyData As Keys) As Boolean
-        Dim getControl As Control = Me.ActiveControl
+    '' <summary>
+    '' フォームロードイベント
+    '' </summary>
+    '''エンタータブ処理
 
-        ''ボタンだったらタブにしない
-        Select Case getControl.GetType.Name
-            Case "TextBox", "ComboBox", "RadioButton"
-                'Returnキーが押されているか調べる
-                'AltかCtrlキーが押されている時は、本来の動作をさせる
-                If ((keyData And Keys.KeyCode) = Keys.Return) AndAlso
-                    ((keyData And (Keys.Alt Or Keys.Control)) = Keys.None) Then
-                    'Tabキーを押した時と同じ動作をさせる
-                    'Shiftキーが押されている時は、逆順にする
-                    Me.ProcessTabKey((keyData And Keys.Shift) <> Keys.Shift)
-                    '本来の処理はさせない
-                    Return True
-                End If
-                Return MyBase.ProcessDialogKey(keyData)
+    'Protected Overrides Function ProcessDialogKey(ByVal keyData As Keys) As Boolean
+    '    Dim getControl As Control = Me.ActiveControl
 
-            Case "DateTimePicker"
-                If ((keyData And Keys.KeyCode) = Keys.Return) AndAlso
-                    ((keyData And (Keys.Alt Or Keys.Control)) = Keys.None) Then
-                    'Tabキーを押した時と同じ動作をさせる
-                    'Shiftキーが押されている時は、逆順にする
-                    Me.ProcessTabKey((keyData And Keys.Shift) <> Keys.Shift)
-                    '本来の処理はさせない
-                    Return True
+    '    ''ボタンだったらタブにしない
+    '    Select Case getControl.GetType.Name
+    '        Case "TextBox", "ComboBox", "RadioButton"
+    '            'Returnキーが押されているか調べる
+    '            'AltかCtrlキーが押されている時は、本来の動作をさせる
+    '            If ((keyData And Keys.KeyCode) = Keys.Return) AndAlso
+    '                ((keyData And (Keys.Alt Or Keys.Control)) = Keys.None) Then
+    '                'Tabキーを押した時と同じ動作をさせる
+    '                'Shiftキーが押されている時は、逆順にする
+    '                Me.ProcessTabKey((keyData And Keys.Shift) <> Keys.Shift)
+    '                '本来の処理はさせない
+    '                Return True
+    '            End If
+    '            Return MyBase.ProcessDialogKey(keyData)
 
-                    'Me.ProcessKey()
-                End If
-                Return MyBase.ProcessDialogKey(keyData)
+    '        Case "DateTimePicker"
+    '            If ((keyData And Keys.KeyCode) = Keys.Return) AndAlso
+    '                ((keyData And (Keys.Alt Or Keys.Control)) = Keys.None) Then
+    '                'Tabキーを押した時と同じ動作をさせる
+    '                'Shiftキーが押されている時は、逆順にする
+    '                Me.ProcessTabKey((keyData And Keys.Shift) <> Keys.Shift)
+    '                '本来の処理はさせない
+    '                Return True
 
-            Case Else
+    '                'Me.ProcessKey()
+    '            End If
+    '            Return MyBase.ProcessDialogKey(keyData)
 
-        End Select
-        Return MyBase.ProcessDialogKey(keyData)
-    End Function
+    '        Case Else
+
+    '    End Select
+    '    Return MyBase.ProcessDialogKey(keyData)
+    'End Function
 
     'Protected Overrides Sub OnEnter(e As EventArgs)
     '    Dim getControl As Control = Me.ActiveControl
@@ -53,6 +79,14 @@ Public Class frmベース
 
     Private Sub Template_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         BackColorChg(sender)
+
+
+        ''
+        ''フォームがすべてのキー イベントを受け取る
+        Me.KeyPreview = True
+
+
+
     End Sub
 
     ''イベント埋め込み
